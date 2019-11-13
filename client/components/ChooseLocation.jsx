@@ -1,9 +1,9 @@
 import React from 'react'
 
-class App extends React.Component {
-  state = {
-    dog: null
-  }
+class ChooseLocation extends React.Component {
+  // state = {
+  //   dog: null
+  // }
 
   // componentDidMount () {
   //   // getRandomDog()
@@ -31,9 +31,11 @@ class App extends React.Component {
   render () {
     return (
       <>
-<h1> Lets go! </h1>
+      <div>
+        <h1> This is supposed to be a location box </h1>
+      </div>
       </>
     )
   }
 }
-export default App
+export default ChooseLocation
