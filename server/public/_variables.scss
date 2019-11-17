@@ -1,1 +1,6 @@
-@import '~bulma/sass/utilities/_all.sass'
+
+@import '../../node_modules/bulma/sass/utilities/initial-variables.sass';
+
+// ADD HERE variables you want to override
+
+@import '../../node_modules/bulma/sass/utilities/_all.sass';
