@@ -31,14 +31,6 @@ class Nav extends React.Component {
                   <a className="navbar-item">
               Documentation
                   </a>
-                  <span className="navbar-item">
-                    <a className="button is-info is-inverted">
-                      <span className="icon">
-                        <i className="fab fa-github"></i>
-                      </span>
-                      <span>Download</span>
-                    </a>
-                  </span>
                 </div>
               </div>
             </div>
