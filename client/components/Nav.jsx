@@ -1,6 +1,4 @@
 import React from 'react'
-// // import { Button } from 'react-bulma-components/dist'
-// import { Navbar } from 'react-bulma-components/dist'
 
 class Nav extends React.Component {
   render () {
@@ -11,9 +9,9 @@ class Nav extends React.Component {
           <nav className="navbar">
             <div className="container">
               <div className="navbar-brand">
-                <a className="navbar-item">
+                {/* <a className="navbar-item">
                   <img src="https://bulma.io/images/bulma-type-white.png" alt="Logo"/>
-                </a>
+                </a> */}
                 <span className="navbar-burger burger" data-target="navbarMenuHeroB">
                   <span></span>
                   <span></span>
@@ -22,15 +20,15 @@ class Nav extends React.Component {
               </div>
               <div id="navbarMenuHeroB" className="navbar-menu">
                 <div className="navbar-end">
-                  <a className="navbar-item is-active">
+                  <a className="navbar-item" href='/#/'>
               Home
                   </a>
-                  <a className="navbar-item">
-              Examples
+                  <a className="navbar-item" href='/#/map'>
+              Map
                   </a>
-                  <a className="navbar-item">
+                  {/* <a className="navbar-item">
               Documentation
-                  </a>
+                  </a> */}
                 </div>
               </div>
             </div>
