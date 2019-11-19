@@ -7,5 +7,6 @@ module.exports = {
 }
 
 function getUsers (db = connection) {
-  return db('dealers').select()
+  return db('dealers')
+    .select()
 }

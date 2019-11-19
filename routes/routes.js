@@ -3,12 +3,12 @@ const db = require('../db')
 const router = express.Router()
 
 // home page
-router.get('/', (req, res) => {
+router.get('/map', (req, res) => {
   db.getUsers()
-    .then(dealers => {
-      res.render('index', { dealers: dealers })
+    .then(users => {
+      res.json(users)
     })
-    .catch(err => displayError(res, err))
+    .catch(displayError)
 })
 
 function displayError (res, err) {
