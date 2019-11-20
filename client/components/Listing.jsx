@@ -1,36 +1,17 @@
 import React from 'react'
-import { getUsers } from '../api/index'
-import ListItem from './ListItem'
+import User from './User'
 
-class Listing extends React.Component {
-  state = {
-    users: []
-  }
-
-  componentDidMount () {
-    this.fetchPosts()
-  }
-
-  fetchPosts () {
-    return getUsers()
-      .then(users => {
-        this.setState({ users: users })
-      })
-      .catch(err => {
-        this.setState({ errorMessage: err.message })
-      })
-  }
-
+class ListItem extends React.Component {
   render () {
     return (
-      <React.Fragment>
-        <section>
-          <ul>
-            <ListItem users={this.state.users}/>
-          </ul>
-        </section>
-      </React.Fragment>
+
+      <ul>
+        {this.props.users.map((user, i) => (
+          <User key={i} user={user} />)
+        )}
+      </ul>
+
     )
   }
 }
-export default Listing
+export default ListItem

@@ -2,8 +2,26 @@ import React from 'react'
 import Map from './Map'
 import Listing from './Listing'
 import Marker from './Marker'
-
+import { getUsers } from '../api/index'
 class MapPage extends React.Component {
+  state = {
+    users: []
+  }
+
+  componentDidMount () {
+    this.fetchPosts()
+  }
+
+  fetchPosts () {
+    return getUsers()
+      .then(users => {
+        this.setState({ users: users })
+      })
+      .catch(err => {
+        this.setState({ errorMessage: err.message })
+      })
+  }
+
   render () {
     return (
       <React.Fragment>
@@ -19,7 +37,7 @@ class MapPage extends React.Component {
 
             <div className="column">
               <section>
-                <Listing />
+                <Listing users={this.state.users}/>
               </section>
             </div>
           </div>
