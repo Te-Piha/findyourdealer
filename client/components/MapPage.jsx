@@ -1,6 +1,6 @@
 import React from 'react'
 import Map from './Map'
-import Listing from './Listing'
+// import Listing from './Listing'
 
 class MapPage extends React.Component {
   render () {
@@ -17,7 +17,7 @@ class MapPage extends React.Component {
 
             <div className="column">
               <section>
-                <Listing />
+                {/* <Listing /> */}
               </section>
             </div>
           </div>
