@@ -30,7 +30,9 @@ class MapPage extends React.Component {
 
             <div className="column is-two-thirds is-link">
               <Map >
-                <Marker />
+                <Marker
+                  lat={-36.8644882}
+                  lng={174.776501}/>
               </Map>
 
             </div>

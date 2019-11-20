@@ -1,5 +1,5 @@
 exports.seed = function (knex, Promise) {
-  return knex('posts').del()
+  return knex('dealers').del()
     .then(function () {
       return knex('dealers').insert([
         { id: 99901,
@@ -8,7 +8,7 @@ exports.seed = function (knex, Promise) {
           strainType: 'Indica',
           strainName: 'Wabour',
           cost: '200',
-          photo: 'images/Aacinda-Jrdern.jpeg',
+          photo: '/images/Jacinda.jpg',
           description: 'dankest kush out' },
 
         { id: 99902,
@@ -17,7 +17,7 @@ exports.seed = function (knex, Promise) {
           strainType: 'Hybrid',
           strainName: 'My Precious',
           cost: '20000',
-          photo: 'images/Aacinda-Jrdern.jpeg',
+          photo: '/images/Bilbo.jpg',
           description: 'aye ets go' },
 
         { id: 99903,
@@ -26,7 +26,7 @@ exports.seed = function (knex, Promise) {
           strainType: 'Staiva',
           strainName: 'Mahi Dog',
           cost: '10',
-          photo: 'images/Aacinda-Jrdern.jpeg',
+          photo: '/images/Kai.jpg',
           description: 'we out here' }
 
       ])

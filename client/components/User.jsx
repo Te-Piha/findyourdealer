@@ -9,18 +9,18 @@ class User extends React.Component {
   <div className="tile is-vertical">
     <div className="tile">
       <div className="tile is-parent is-vertical">
-        <article className="tile is-child notification is-warning">
+        <article className="tile is-child notification is-success">
           <div className="columns">
             <div className="column">
-              <p className="title">{this.props.user.firstName}</p>
-              <p className="subtitle">{this.props.user.strainType}</p>
-              <p className="subtitle">{this.props.user.cost}</p>
-              <p className="subtitle">{this.props.user.description}</p>
+              <p className="title">{this.props.user.firstName} {this.props.user.lastName}</p>
+              <p className="subtitle">Strain: {this.props.user.strainType}</p>
+              <p className="subtitle">Monies: {this.props.user.cost}</p>
+              <p className="subtitle">Description: {this.props.user.description}</p>
             </div>
-            <div className="column">
+            <div className="column is-narrow has-text-centered">
               <figure className="media-right">
-                <p className="image is-120x120">
-                  <img src="images/Aacinda-Jrdern.jpeg"/>
+                <p >
+                  <img src={this.props.user.photo} />
                 </p>
               </figure>
             </div>
