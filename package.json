@@ -9,7 +9,7 @@
   "scripts": {
     "knex": "knex",
     "client": "webpack-dev-server --hot --inline",
-    "dev": "node server & webpack --watch",
+    "dev": "nodemon server & webpack --watch",
     "server": "node server",
     "start": "webpack && node server",
     "test": "jest --watchAll"
@@ -53,6 +53,7 @@
     "fibers": "^4.0.2",
     "jest": "^24.7.1",
     "node-sass": "^4.13.0",
+    "nodemon": "^1.19.4",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "react-router-dom": "^5.1.2",

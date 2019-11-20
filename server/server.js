@@ -13,6 +13,6 @@ server.use(express.static(path.join(__dirname, './public')))
 server.use(express.urlencoded({ extended: true }))
 
 // Routes
-server.use('/#/', routes)
+server.use('/map', routes)
 
 module.exports = server

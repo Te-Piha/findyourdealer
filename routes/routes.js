@@ -3,7 +3,7 @@ const db = require('../db')
 const router = express.Router()
 
 // home page
-router.get('/map', (req, res) => {
+router.get('/', (req, res) => {
   db.getUsers()
     .then(users => {
       res.json(users)

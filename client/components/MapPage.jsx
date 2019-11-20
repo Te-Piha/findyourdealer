@@ -1,6 +1,7 @@
 import React from 'react'
 import Map from './Map'
-// import Listing from './Listing'
+import Listing from './Listing'
+import Marker from './Marker'
 
 class MapPage extends React.Component {
   render () {
@@ -10,14 +11,15 @@ class MapPage extends React.Component {
           <div className="columns">
 
             <div className="column is-two-thirds is-link">
-
-              <Map />
+              <Map >
+                <Marker />
+              </Map>
 
             </div>
 
             <div className="column">
               <section>
-                {/* <Listing /> */}
+                <Listing />
               </section>
             </div>
           </div>

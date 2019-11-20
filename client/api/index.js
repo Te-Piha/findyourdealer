@@ -1,10 +1,10 @@
 import request from 'superagent'
 
 export function getUsers () {
-  return request.get('/#/map')
+  return request.get('/map')
     .then(res => {
-      const user = res.body
-      return user
+      const users = res.body
+      return users
     })
     .catch(() => {
       throw Error('its fucked')
