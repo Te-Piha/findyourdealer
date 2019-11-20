@@ -14,6 +14,7 @@ class Location extends React.Component {
                 <div className="field">
                   <label className="label">Location</label>
                   <input className="input" type="text" placeholder="Auckland"/>
+                  <button></button>
                   <p className="help">Search the area you are looking</p>
                 </div>
               </div>
