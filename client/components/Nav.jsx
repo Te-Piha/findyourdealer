@@ -9,9 +9,9 @@ class Nav extends React.Component {
           <nav className="navbar">
             <div className="container">
               <div className="navbar-brand">
-                {/* <a className="navbar-item">
-                  <img src="https://bulma.io/images/bulma-type-white.png" alt="Logo"/>
-                </a> */}
+                <a className="navbar-item">
+                  <img src="/images/weed.png" alt="Logo"/>
+                </a>
                 <span className="navbar-burger burger" data-target="navbarMenuHeroB">
                   <span></span>
                   <span></span>

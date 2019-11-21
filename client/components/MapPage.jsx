@@ -32,7 +32,7 @@ class MapPage extends React.Component {
               <Map >
                 <Marker
                   lat={-36.8644882}
-                  lng={174.776501}/>
+                  lng={174.776501} />
               </Map>
 
             </div>

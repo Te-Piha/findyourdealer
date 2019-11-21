@@ -18,7 +18,7 @@ exports.seed = function (knex, Promise) {
           strainName: 'My Precious',
           cost: '20000',
           photo: '/images/Bilbo.jpg',
-          description: 'aye ets go' },
+          description: 'One to rule them all' },
 
         { id: 99903,
           firstName: 'Kai',
@@ -27,7 +27,7 @@ exports.seed = function (knex, Promise) {
           strainName: 'Mahi Dog',
           cost: '10',
           photo: '/images/Kai.jpg',
-          description: 'we out here' }
+          description: 'Smoke upon the Devils Lettuce' }
 
       ])
     })
