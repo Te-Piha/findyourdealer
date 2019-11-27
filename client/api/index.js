@@ -6,7 +6,8 @@ export function getUsers () {
       const users = res.body
       return users
     })
-    .catch(() => {
-      throw Error('its fucked')
+    .catch((err) => {
+      // throw Error('its not working')
+      console.error(err.message, 'not sure whats going on')
     })
 }

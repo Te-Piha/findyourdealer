@@ -4,7 +4,7 @@ const internal = require('../client/api/index')
 
 describe('Testing API', () => {
   const factUrl = 'https://uselessfacts.jsph.pl'
-  const userUrl = 'https://localhost:3000'
+  const userUrl = 'http://localhost:3000'
 
   it('gets a random fact', () => {
     // Arrange
@@ -33,7 +33,8 @@ describe('Testing API', () => {
 
   it('gets user', () => {
     // Arrange
-    const expected = { id: 1,
+    const expected = {
+      id: 1,
       firstName: 'FirstName',
       lastName: 'LastName',
       strainType: 'Test',
