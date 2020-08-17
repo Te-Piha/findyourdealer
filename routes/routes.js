@@ -8,11 +8,12 @@ router.get('/', (req, res) => {
     .then(users => {
       res.json(users)
     })
-    .catch(displayError)
+    // .catch(displayError)
+    .else(res.status(500).send('DATABASE ERROR: ' + err.message))
 })
 
-function displayError (res, err) {
-  res.status(500).send('DATABASE ERROR: ' + err.message)
-}
+// function displayError (res, err) {
+//   res.status(500).send('DATABASE ERROR: ' + err.message)
+// }
 
 module.exports = router
